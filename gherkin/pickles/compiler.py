@@ -72,7 +72,8 @@ def _compile_scenario_outline(feature_tags, background_steps, scenario_outline, 
                     'locations': [
                         _pickle_location(values['location']),
                         _pickle_step_location(scenario_outline_step)
-                    ]
+                    ],
+                    'keyword' : scenario_outline_step.get('keyword'),
                 }
                 steps.append(_pickle_step)
 
@@ -146,7 +147,8 @@ def _pickle_step(step):
             step.get('argument'),
             [],
             []),
-        'locations': [_pickle_step_location(step)]
+        'locations': [_pickle_step_location(step)],
+        'keyword' : step.get('keyword'),
     }
 
 
