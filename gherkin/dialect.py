@@ -59,3 +59,12 @@ class Dialect(object):
     @property
     def but_keywords(self):
         return self.spec['but']
+    @property
+    def what_keywords(self):
+        return self.spec['what']
+    @property
+    def where_keywords(self):
+        return self.spec['where']
+    @property
+    def how_keywords(self):
+        return self.spec['how']

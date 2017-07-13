@@ -665,7 +665,19 @@
     "when": [
       "* ",
       "When "
-    ]
+    ],
+    "what": [
+      "* ",
+      "What "
+    ],
+    "where": [
+      "* ",
+      "Where "
+    ],
+    "how": [
+      "* ",
+      "How "
+    ]	  
   },
   "en-Scouse": {
     "and": [
